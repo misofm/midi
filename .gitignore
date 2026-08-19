@@ -1,0 +1,8 @@
+.venv/
+target/
+dist/
+*.egg-info/
+python/miso_midi/_native*.so
+__pycache__/
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,87 @@
+{
+  "datasets": {
+    "huge": {
+      "input_bytes": 1256430,
+      "input_sha256": "90d7ad33e14e80149d8cd2c3d0dae204de9b2ec4670b850593864111245bd40f",
+      "semantic_contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "fe10b416f2f7a65925f38e2a66f201b427040c3243d2b7c818bde3297b12d37c",
+        "summary": {
+          "controls": 3040,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 384,
+          "notes": 192000,
+          "pedals": 16,
+          "pitch_bends": 752,
+          "tempos": 0,
+          "time_signatures": 0,
+          "tracks": 16
+        }
+      }
+    },
+    "mahler": {
+      "input_bytes": 656425,
+      "input_sha256": "35a59329ab8f1f86ec2602bb5293b9fbddc694e512aafa00e310cb8da237f302",
+      "semantic_contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "d8fcfebd208541d7791fc0dab49b561893a7c50180ccbcc61b7049e009013f69",
+        "summary": {
+          "controls": 36287,
+          "key_signatures": 97,
+          "lyrics": 0,
+          "markers": 97,
+          "notes": 60411,
+          "pedals": 0,
+          "pitch_bends": 0,
+          "tempos": 177,
+          "time_signatures": 97,
+          "tracks": 51
+        }
+      }
+    },
+    "normal": {
+      "input_bytes": 104974,
+      "input_sha256": "4b62f8bbd60175f610097817e1759514297f694a46320e1f3d770dbb88c94f97",
+      "semantic_contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "d75cb3bb06a230b8bbbb371e32cf86f5aeaa2a4c1ea098f7f5f371eb559271f1",
+        "summary": {
+          "controls": 272,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 32,
+          "notes": 16000,
+          "pedals": 8,
+          "pitch_bends": 64,
+          "tempos": 0,
+          "time_signatures": 0,
+          "tracks": 8
+        }
+      }
+    },
+    "tiny": {
+      "input_bytes": 171,
+      "input_sha256": "39da22e3a55fdf78b68855e8ed870ccfbf3e5d077401fba7174773f7fa7c92d7",
+      "semantic_contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "bd36b66d133db7772eb2bc5e81e7a1c9ea4a62561de0131a9465ba73c9491acc",
+        "summary": {
+          "controls": 3,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 1,
+          "notes": 16,
+          "pedals": 1,
+          "pitch_bends": 1,
+          "tempos": 0,
+          "time_signatures": 0,
+          "tracks": 1
+        }
+      }
+    }
+  },
+  "miso_midi_version": "0.1.0",
+  "schema": "miso-native-score-preflight/v1",
+  "symusic_version": "0.6.0"
+}

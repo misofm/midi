@@ -1,0 +1,248 @@
+{
+  "schema": "miso-score-parser-parity/v1",
+  "status_date": "2026-08-19",
+  "scope": "M1 tick-score parser admission, semantic parity, and resource bounds",
+  "reference": {
+    "name": "Symusic",
+    "version": "0.6.0",
+    "role": "differential oracle only for supported, well-formed tick-score inputs"
+  },
+  "parser_modes": {
+    "legacy_rust": "parse_score_smf remains the trusted/unlimited Rust fast path",
+    "checked_rust": "implemented: parse_score_smf_with_limits(data, ScoreParseLimits) returns ResourceLimitExceeded with ScoreResource",
+    "python_default": "implemented: parse_score(data, limits=None, mode='compatible') and Score(data, ...) use finite ScoreParseLimits::DEFAULT; None never means unlimited",
+    "python_unlimited": "implemented: parse_score_unlimited(data) is the explicit trusted/legacy escape hatch and is unsafe for hostile bytes",
+    "compatible": "implemented: enforce finite limits, accept omitted EOT, and stop/ignore after first EOT",
+    "strict": "implemented: enforce finite limits and reject missing/duplicate EOT, events after EOT, invalid running status after system events, invalid strict division, and file trailing bytes"
+  },
+  "semantics": [
+    {
+      "id": "vlq_1_to_4_bytes",
+      "miso": "supported",
+      "symusic_0_6": "parity",
+      "fixture": "score-vlq-widths.mid",
+      "contract": "decoded deltas are exact score times and durations"
+    },
+    {
+      "id": "maximum_valid_vlq",
+      "miso": "supported",
+      "symusic_0_6": "parity",
+      "fixture": "score-max-vlq.mid",
+      "contract": "0x0fffffff is admitted as one delta without sign or width loss"
+    },
+    {
+      "id": "channel_running_status",
+      "miso": "supported",
+      "symusic_0_6": "parity",
+      "fixture": "score-running-status-groups.mid",
+      "contract": "one- and two-data-byte status runs preserve program, controls, notes, and grouping order"
+    },
+    {
+      "id": "running_status_after_sysex",
+      "miso": "implemented_spec_policy",
+      "symusic_0_6": "exclusion",
+      "fixture": "score-running-after-sysex-policy.mid, score-running-after-f7-policy.mid",
+      "contract": "both F0 and F7 clear running status; the following data byte is rejected as RunningStatusMissing",
+      "current_observation": "current Miso scan, raw parse, and score parse reject at absolute byte 31; historical competitor behavior differs: Mido accepts F0 continuation differently and Symusic omits the F0 note"
+    },
+    {
+      "id": "running_status_after_meta",
+      "miso": "implemented_spec_policy",
+      "symusic_0_6": "exclusion",
+      "fixture": "score-running-after-meta-policy.mid",
+      "contract": "FF meta events clear running status; the following data byte is rejected as RunningStatusMissing",
+      "current_observation": "current Miso scan, raw parse, and score parse reject at absolute byte 32; historical Mido and Symusic behavior accepts and pairs the note"
+    },
+    {
+      "id": "source_track_channel_program_grouping",
+      "miso": "supported",
+      "symusic_0_6": "parity",
+      "fixture": "score-running-status-groups.mid",
+      "contract": "output order is source track, channel, program; channel 9 is drum"
+    },
+    {
+      "id": "same_pitch_overlap_fifo",
+      "miso": "supported",
+      "symusic_0_6": "parity_small",
+      "fixture": "score-overlap-queue.mid",
+      "contract": "same channel/pitch note-offs complete outstanding note-ons FIFO"
+    },
+    {
+      "id": "zero_orphan_dangling_notes",
+      "miso": "supported",
+      "symusic_0_6": "parity",
+      "fixture": "score-note-lifecycle.mid",
+      "contract": "retain closed zero-duration notes; discard orphan offs and dangling ons"
+    },
+    {
+      "id": "controls_pitch_bends_pedals",
+      "miso": "supported",
+      "symusic_0_6": "parity",
+      "fixture": "tiny.mid",
+      "contract": "retain CC and bend rows; matched CC64 creates one pedal interval"
+    },
+    {
+      "id": "tempo_time_key_marker_order",
+      "miso": "supported",
+      "symusic_0_6": "parity",
+      "fixture": "score-ordered-globals-text.mid",
+      "contract": "sort by tick stably, retaining source parsing order at equal tick"
+    },
+    {
+      "id": "text_utf8_normalization",
+      "miso": "supported",
+      "symusic_0_6": "parity",
+      "fixture": "score-invalid-text-expansion.mid",
+      "contract": "invalid UTF-8 sequences become one U+FFFD each; normalized bytes count toward text limits"
+    },
+    {
+      "id": "lyrics_channel_zero_grouping",
+      "miso": "documented_policy",
+      "symusic_0_6": "exclusion",
+      "fixture": "score-lyric-channel-zero-policy.mid",
+      "contract": "coalesce lyric content with the current channel-zero/program group; Symusic 0.6 may split an otherwise identical group"
+    },
+    {
+      "id": "sysex_unknown_semantics",
+      "miso": "ignored_by_tick_score",
+      "symusic_0_6": "exclusion",
+      "fixture": "score-system-event-continuation.mid, score-valid-f7.mid",
+      "contract": "tick score does not retain SysEx/unknown events; explicit channel status after F0/F7 remains valid; Symusic 0.6 misreads the F7 timing case"
+    },
+    {
+      "id": "smpte_division",
+      "miso": "raw_division_observed",
+      "symusic_0_6": "unsupported",
+      "fixture": "score-smpte-division.mid",
+      "contract": "retain raw 16-bit division; no cross-library tick-score equality claim"
+    },
+    {
+      "id": "format_and_division_admission",
+      "miso": "format_0_1_2_supported_with_compatible_and_strict_division_policy",
+      "symusic_0_6": "parity_for_format_0_2_and_zero_division_only",
+      "fixture": "score-format-0.mid, score-format-2.mid, score-zero-division-policy.mid, score-invalid-smpte-division-policy.mid",
+      "contract": "all three SMF formats parse; strict rejects TPQ zero and invalid SMPTE frame/tick encodings while accepting valid SMPTE; compatible retains raw division",
+      "current_observation": "Miso compatible retains TPQ zero and raw invalid SMPTE 0x8000; strict rejects them and accepts valid SMPTE. Symusic rejects all SMPTE."
+    },
+    {
+      "id": "zero_length_text_meta",
+      "miso": "supported_empty_normalization",
+      "symusic_0_6": "parity",
+      "fixture": "score-zero-text-meta.mid",
+      "contract": "zero-length name/marker payloads consume no text-arena bytes and do not create a nonempty marker row"
+    },
+    {
+      "id": "symusic_v060_real_world_testcases",
+      "miso": "full_canonical_equality_on_27_pinned_files",
+      "symusic_0_6": "differential_oracle",
+      "fixture": "benchmarks/symusic_testcases_manifest.json",
+      "contract": "opt-in checksum-pinned One_track_MIDIs and Multitrack_MIDIs corpus; each file must equal its manifest contract and the installed Symusic 0.6 contract",
+      "evidence": "benchmarks/results/symusic-testcases-v0.6.0-equality.json"
+    },
+    {
+      "id": "eot_and_file_trailing",
+      "miso": "compatible_and_strict_implemented",
+      "symusic_0_6": "exclusion_malformed",
+      "fixture": "score-missing-eot-policy.mid, score-events-after-eot-policy.mid",
+      "contract": "strict mode rejects missing/duplicate EOT, events after EOT, and file trailing bytes; compatible mode accepts chunk-end without EOT and stops/ignores after first EOT while raw lossless mode preserves bytes separately",
+      "current_observation": "Miso compatible accepts missing EOT and ignores post-EOT content; strict rejects both. parse_score_unlimited retains legacy post-EOT semantic events. Symusic accepts missing EOT and ignores post-EOT events; Mido iterates post-EOT events."
+    }
+  ],
+  "resource_limits": [
+    {
+      "id": "input_bytes",
+      "default": 67108864,
+      "unit": "bytes",
+      "current": "implemented through finite-by-default Python parse_score/Score and checked Rust; legacy Rust and explicit Python unlimited are unlimited",
+      "admission_offset": 0,
+      "fixture": "caller-supplied bytes larger than limit",
+      "error": "score parse limit exceeded: input bytes (limit 67108864)"
+    },
+    {
+      "id": "source_tracks",
+      "default": 4096,
+      "unit": "tracks",
+      "current": "implemented through finite-by-default Python parse_score/Score and checked Rust; legacy Rust and explicit Python unlimited are unlimited",
+      "admission_offset": "header track-count field",
+      "fixture": "score-source-tracks.mid (parameterized to 4097 declared empty tracks)",
+      "error": "score parse limit exceeded: source tracks (limit 4096)"
+    },
+    {
+      "id": "track_bytes",
+      "default": 16777216,
+      "unit": "bytes per MTrk",
+      "current": "implemented through finite-by-default Python parse_score/Score and checked Rust; legacy Rust and explicit Python unlimited are unlimited",
+      "admission_offset": "MTrk length field",
+      "fixture": "score-declared-u32-track.mid",
+      "error": "score parse limit exceeded: track bytes (limit 16777216)"
+    },
+    {
+      "id": "events",
+      "default": 2000000,
+      "unit": "decoded wire events",
+      "current": "implemented through finite-by-default Python parse_score/Score and checked Rust; legacy Rust and explicit Python unlimited are unlimited",
+      "admission_offset": "event delta offset",
+      "fixture": "score-event-density.mid (parameterized)",
+      "error": "score parse limit exceeded: events (limit 2000000)"
+    },
+    {
+      "id": "notes",
+      "default": 1000000,
+      "unit": "note starts, including dangling note-ons",
+      "current": "implemented through finite-by-default Python parse_score/Score as NoteStarts and checked Rust; legacy Rust and explicit Python unlimited are unlimited",
+      "admission_offset": "note-on event delta offset",
+      "fixture": "score-overlap-queue.mid",
+      "error": "score parse limit exceeded: note starts (limit 1000000)"
+    },
+    {
+      "id": "text_bytes",
+      "default": 16777216,
+      "unit": "normalized UTF-8 bytes across names, lyrics, and markers",
+      "current": "implemented through finite-by-default Python parse_score/Score as TextBytes and checked Rust; legacy Rust and explicit Python unlimited are unlimited",
+      "admission_offset": "text meta event delta offset before arena append",
+      "fixture": "score-invalid-text-expansion.mid",
+      "error": "score parse limit exceeded: normalized text bytes (limit 16777216)"
+    },
+    {
+      "id": "global_events",
+      "default": 2000000,
+      "unit": "combined tempo, time-signature, key-signature, and marker rows; bounded by Events",
+      "current": "bounded by implemented Events only in Rust checked parsing; no separate cap",
+      "admission_offset": "global meta event delta offset",
+      "fixture": "score-global-density.mid",
+      "error": "score parse limit exceeded: events (limit 2000000)"
+    },
+    {
+      "id": "overlap_queue",
+      "default": 2000000,
+      "unit": "open same-channel/same-pitch notes per source track; bounded by Events",
+      "current": "bounded by implemented Events and NoteStarts only in Rust checked parsing; no separate cap",
+      "admission_offset": "overflowing note-on delta offset",
+      "fixture": "score-overlap-queue.mid",
+      "error": "score parse limit exceeded: events (limit 2000000)"
+    },
+    {
+      "id": "absolute_tick",
+      "default": 18446744073709551615,
+      "unit": "ticks",
+      "current": "u64 checked-add only",
+      "admission_offset": "delta VLQ start offset",
+      "fixture": "score-max-vlq.mid plus a count-limited repeated-delta generator",
+      "error": "absolute tick exceeds u64"
+    },
+    {
+      "id": "score_arena_u32_ranges",
+      "default": 4294967295,
+      "unit": "rows or normalized text bytes per internal arena",
+      "current": "partially checked at range append",
+      "admission_offset": "first row/text append exceeding its arena",
+      "fixture": "formula-only; never materialise near-u32 input in a PR test",
+      "error": "size does not fit this target (or an earlier Events/NoteStarts/TextBytes limit)"
+    }
+  ],
+  "error_contract": {
+    "rust": "implemented: ParseError { offset, kind: ResourceLimitExceeded { resource: ScoreResource, limit } }; display uses 'score parse limit exceeded: <description> (limit <limit>)'",
+    "python": "implemented: parse_score and Score use finite defaults (or caller-provided ScoreParseLimits) and preserve Rust resource-limit ValueError text; parse_score_unlimited is explicit trusted-only legacy behavior",
+    "precedence": "input/header/chunk limits are checked before allocation; event, note, text, global, and overlap limits are checked before appending the triggering item; structural errors at an earlier byte win"
+  }
+}

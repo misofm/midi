@@ -1,0 +1,34 @@
+[package]
+name = "miso-midi-fuzz"
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.97.1"
+publish = false
+
+[package.metadata]
+cargo-fuzz = true
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[dependencies]
+libfuzzer-sys = "0.4"
+miso-midi-core = { path = "../crates/miso-midi-core" }
+
+[[bin]]
+name = "smf_apis"
+path = "fuzz_targets/smf_apis.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "structured_score"
+path = "fuzz_targets/structured_score.rs"
+test = false
+doc = false
+bench = false
+
+# Keep the cargo-fuzz package outside the repository workspace. This lets it
+# use its own libFuzzer build configuration without changing release builds.
+[workspace]

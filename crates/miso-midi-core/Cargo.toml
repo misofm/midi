@@ -1,0 +1,16 @@
+[package]
+name = "miso-midi-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Dependency-free MIDI parsing and encoding primitives"
+
+[features]
+default = ["std"]
+alloc = []
+std = ["alloc"]
+
+[lints]
+workspace = true

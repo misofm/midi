@@ -1,0 +1,38 @@
+[build-system]
+requires = ["maturin>=1.9,<2"]
+build-backend = "maturin"
+
+[project]
+name = "miso-midi"
+dynamic = ["version"]
+description = "A fast, portable MIDI core with high-level language SDKs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [{ name = "Miso" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Rust",
+    "Topic :: Multimedia :: Sound/Audio :: MIDI",
+]
+
+[project.urls]
+Repository = "https://github.com/misofm/midi"
+Issues = "https://github.com/misofm/midi/issues"
+Documentation = "https://github.com/misofm/midi/tree/main/docs"
+
+[dependency-groups]
+dev = [
+    "maturin>=1.14.1",
+    "pytest>=8,<9",
+]
+
+[tool.maturin]
+manifest-path = "bindings/python/Cargo.toml"
+module-name = "miso_midi._native"
+python-source = "python"
+features = ["pyo3/extension-module"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

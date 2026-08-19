@@ -1,0 +1,428 @@
+{
+  "checkpoint_counts": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "datasets": {
+    "huge": {
+      "input_bytes": 1256430,
+      "input_sha256": "90d7ad33e14e80149d8cd2c3d0dae204de9b2ec4670b850593864111245bd40f",
+      "semantic_contract_sha256": "fe10b416f2f7a65925f38e2a66f201b427040c3243d2b7c818bde3297b12d37c",
+      "semantic_summary": {
+        "controls": 3040,
+        "key_signatures": 0,
+        "lyrics": 0,
+        "markers": 384,
+        "notes": 192000,
+        "pedals": 16,
+        "pitch_bends": 752,
+        "tempos": 0,
+        "time_signatures": 0,
+        "tracks": 16
+      },
+      "workers": {
+        "miso": {
+          "checkpoints": [
+            {
+              "full_retained_bytes_per_score": 2052096.0,
+              "retained_scores": 1,
+              "rss_bytes": 26476544,
+              "rss_delta_from_baseline_bytes": 2052096
+            },
+            {
+              "full_retained_bytes_per_score": 2033664.0,
+              "retained_scores": 2,
+              "rss_bytes": 28491776,
+              "rss_delta_from_baseline_bytes": 4067328
+            },
+            {
+              "full_retained_bytes_per_score": 2038784.0,
+              "retained_scores": 4,
+              "rss_bytes": 32579584,
+              "rss_delta_from_baseline_bytes": 8155136
+            },
+            {
+              "full_retained_bytes_per_score": 2031104.0,
+              "retained_scores": 8,
+              "rss_bytes": 40673280,
+              "rss_delta_from_baseline_bytes": 16248832
+            },
+            {
+              "full_retained_bytes_per_score": 2022912.0,
+              "retained_scores": 16,
+              "rss_bytes": 56791040,
+              "rss_delta_from_baseline_bytes": 32366592
+            },
+            {
+              "full_retained_bytes_per_score": 2022784.0,
+              "retained_scores": 32,
+              "rss_bytes": 89153536,
+              "rss_delta_from_baseline_bytes": 64729088
+            },
+            {
+              "full_retained_bytes_per_score": 2020544.0,
+              "retained_scores": 64,
+              "rss_bytes": 153739264,
+              "rss_delta_from_baseline_bytes": 129314816
+            }
+          ],
+          "dataset": "huge",
+          "final_full_retained_bytes_per_score": 2020544.0,
+          "implementation": "miso",
+          "input_bytes": 1256430,
+          "input_sha256": "90d7ad33e14e80149d8cd2c3d0dae204de9b2ec4670b850593864111245bd40f",
+          "library_version": "0.1.0",
+          "python_handle_list_bytes": 568,
+          "python_handle_slot_bytes": 8.0,
+          "python_score_proxy_size_bytes": 344,
+          "retained_scores": 64,
+          "rss_after_python_handle_list_bytes": 24424448,
+          "rss_baseline_after_import_and_input_bytes": 24424448,
+          "rss_slope_bytes_per_score": 2019929.1099647027
+        },
+        "symusic": {
+          "checkpoints": [
+            {
+              "full_retained_bytes_per_score": 5287936.0,
+              "retained_scores": 1,
+              "rss_bytes": 37834752,
+              "rss_delta_from_baseline_bytes": 5287936
+            },
+            {
+              "full_retained_bytes_per_score": 4683776.0,
+              "retained_scores": 2,
+              "rss_bytes": 41914368,
+              "rss_delta_from_baseline_bytes": 9367552
+            },
+            {
+              "full_retained_bytes_per_score": 4381696.0,
+              "retained_scores": 4,
+              "rss_bytes": 50073600,
+              "rss_delta_from_baseline_bytes": 17526784
+            },
+            {
+              "full_retained_bytes_per_score": 4233216.0,
+              "retained_scores": 8,
+              "rss_bytes": 66412544,
+              "rss_delta_from_baseline_bytes": 33865728
+            },
+            {
+              "full_retained_bytes_per_score": 4158208.0,
+              "retained_scores": 16,
+              "rss_bytes": 99078144,
+              "rss_delta_from_baseline_bytes": 66531328
+            },
+            {
+              "full_retained_bytes_per_score": 4119552.0,
+              "retained_scores": 32,
+              "rss_bytes": 164372480,
+              "rss_delta_from_baseline_bytes": 131825664
+            },
+            {
+              "full_retained_bytes_per_score": 4100736.0,
+              "retained_scores": 64,
+              "rss_bytes": 294993920,
+              "rss_delta_from_baseline_bytes": 262447104
+            }
+          ],
+          "dataset": "huge",
+          "final_full_retained_bytes_per_score": 4100736.0,
+          "implementation": "symusic",
+          "input_bytes": 1256430,
+          "input_sha256": "90d7ad33e14e80149d8cd2c3d0dae204de9b2ec4670b850593864111245bd40f",
+          "library_version": "0.6.0",
+          "python_handle_list_bytes": 568,
+          "python_handle_slot_bytes": 8.0,
+          "python_score_proxy_size_bytes": 40,
+          "retained_scores": 64,
+          "rss_after_python_handle_list_bytes": 32546816,
+          "rss_baseline_after_import_and_input_bytes": 32546816,
+          "rss_slope_bytes_per_score": 4081904.962983075
+        }
+      }
+    },
+    "mahler": {
+      "input_bytes": 656425,
+      "input_sha256": "35a59329ab8f1f86ec2602bb5293b9fbddc694e512aafa00e310cb8da237f302",
+      "semantic_contract_sha256": "d8fcfebd208541d7791fc0dab49b561893a7c50180ccbcc61b7049e009013f69",
+      "semantic_summary": {
+        "controls": 36287,
+        "key_signatures": 97,
+        "lyrics": 0,
+        "markers": 97,
+        "notes": 60411,
+        "pedals": 0,
+        "pitch_bends": 0,
+        "tempos": 177,
+        "time_signatures": 97,
+        "tracks": 51
+      },
+      "workers": {
+        "miso": {
+          "checkpoints": [
+            {
+              "full_retained_bytes_per_score": 966656.0,
+              "retained_scores": 1,
+              "rss_bytes": 24813568,
+              "rss_delta_from_baseline_bytes": 966656
+            },
+            {
+              "full_retained_bytes_per_score": 987136.0,
+              "retained_scores": 2,
+              "rss_bytes": 25821184,
+              "rss_delta_from_baseline_bytes": 1974272
+            },
+            {
+              "full_retained_bytes_per_score": 993280.0,
+              "retained_scores": 4,
+              "rss_bytes": 27820032,
+              "rss_delta_from_baseline_bytes": 3973120
+            },
+            {
+              "full_retained_bytes_per_score": 992256.0,
+              "retained_scores": 8,
+              "rss_bytes": 31784960,
+              "rss_delta_from_baseline_bytes": 7938048
+            },
+            {
+              "full_retained_bytes_per_score": 992256.0,
+              "retained_scores": 16,
+              "rss_bytes": 39723008,
+              "rss_delta_from_baseline_bytes": 15876096
+            },
+            {
+              "full_retained_bytes_per_score": 991744.0,
+              "retained_scores": 32,
+              "rss_bytes": 55582720,
+              "rss_delta_from_baseline_bytes": 31735808
+            },
+            {
+              "full_retained_bytes_per_score": 990784.0,
+              "retained_scores": 64,
+              "rss_bytes": 87257088,
+              "rss_delta_from_baseline_bytes": 63410176
+            }
+          ],
+          "dataset": "mahler",
+          "final_full_retained_bytes_per_score": 990784.0,
+          "implementation": "miso",
+          "input_bytes": 656425,
+          "input_sha256": "35a59329ab8f1f86ec2602bb5293b9fbddc694e512aafa00e310cb8da237f302",
+          "library_version": "0.1.0",
+          "python_handle_list_bytes": 568,
+          "python_handle_slot_bytes": 8.0,
+          "python_score_proxy_size_bytes": 344,
+          "retained_scores": 64,
+          "rss_after_python_handle_list_bytes": 23846912,
+          "rss_baseline_after_import_and_input_bytes": 23846912,
+          "rss_slope_bytes_per_score": 990988.6273870938
+        },
+        "symusic": {
+          "checkpoints": [
+            {
+              "full_retained_bytes_per_score": 3440640.0,
+              "retained_scores": 1,
+              "rss_bytes": 35504128,
+              "rss_delta_from_baseline_bytes": 3440640
+            },
+            {
+              "full_retained_bytes_per_score": 2846720.0,
+              "retained_scores": 2,
+              "rss_bytes": 37756928,
+              "rss_delta_from_baseline_bytes": 5693440
+            },
+            {
+              "full_retained_bytes_per_score": 2549760.0,
+              "retained_scores": 4,
+              "rss_bytes": 42262528,
+              "rss_delta_from_baseline_bytes": 10199040
+            },
+            {
+              "full_retained_bytes_per_score": 2406912.0,
+              "retained_scores": 8,
+              "rss_bytes": 51318784,
+              "rss_delta_from_baseline_bytes": 19255296
+            },
+            {
+              "full_retained_bytes_per_score": 2338560.0,
+              "retained_scores": 16,
+              "rss_bytes": 69480448,
+              "rss_delta_from_baseline_bytes": 37416960
+            },
+            {
+              "full_retained_bytes_per_score": 2304384.0,
+              "retained_scores": 32,
+              "rss_bytes": 105803776,
+              "rss_delta_from_baseline_bytes": 73740288
+            },
+            {
+              "full_retained_bytes_per_score": 2287232.0,
+              "retained_scores": 64,
+              "rss_bytes": 178446336,
+              "rss_delta_from_baseline_bytes": 146382848
+            }
+          ],
+          "dataset": "mahler",
+          "final_full_retained_bytes_per_score": 2287232.0,
+          "implementation": "symusic",
+          "input_bytes": 656425,
+          "input_sha256": "35a59329ab8f1f86ec2602bb5293b9fbddc694e512aafa00e310cb8da237f302",
+          "library_version": "0.6.0",
+          "python_handle_list_bytes": 568,
+          "python_handle_slot_bytes": 8.0,
+          "python_score_proxy_size_bytes": 40,
+          "retained_scores": 64,
+          "rss_after_python_handle_list_bytes": 32063488,
+          "rss_baseline_after_import_and_input_bytes": 32063488,
+          "rss_slope_bytes_per_score": 2269317.6417775364
+        }
+      }
+    },
+    "normal": {
+      "input_bytes": 104974,
+      "input_sha256": "4b62f8bbd60175f610097817e1759514297f694a46320e1f3d770dbb88c94f97",
+      "semantic_contract_sha256": "d75cb3bb06a230b8bbbb371e32cf86f5aeaa2a4c1ea098f7f5f371eb559271f1",
+      "semantic_summary": {
+        "controls": 272,
+        "key_signatures": 0,
+        "lyrics": 0,
+        "markers": 32,
+        "notes": 16000,
+        "pedals": 8,
+        "pitch_bends": 64,
+        "tempos": 0,
+        "time_signatures": 0,
+        "tracks": 8
+      },
+      "workers": {
+        "miso": {
+          "checkpoints": [
+            {
+              "full_retained_bytes_per_score": 163840.0,
+              "retained_scores": 1,
+              "rss_bytes": 23404544,
+              "rss_delta_from_baseline_bytes": 163840
+            },
+            {
+              "full_retained_bytes_per_score": 161792.0,
+              "retained_scores": 2,
+              "rss_bytes": 23564288,
+              "rss_delta_from_baseline_bytes": 323584
+            },
+            {
+              "full_retained_bytes_per_score": 161792.0,
+              "retained_scores": 4,
+              "rss_bytes": 23887872,
+              "rss_delta_from_baseline_bytes": 647168
+            },
+            {
+              "full_retained_bytes_per_score": 164352.0,
+              "retained_scores": 8,
+              "rss_bytes": 24555520,
+              "rss_delta_from_baseline_bytes": 1314816
+            },
+            {
+              "full_retained_bytes_per_score": 164864.0,
+              "retained_scores": 16,
+              "rss_bytes": 25878528,
+              "rss_delta_from_baseline_bytes": 2637824
+            },
+            {
+              "full_retained_bytes_per_score": 165760.0,
+              "retained_scores": 32,
+              "rss_bytes": 28545024,
+              "rss_delta_from_baseline_bytes": 5304320
+            },
+            {
+              "full_retained_bytes_per_score": 165952.0,
+              "retained_scores": 64,
+              "rss_bytes": 33861632,
+              "rss_delta_from_baseline_bytes": 10620928
+            }
+          ],
+          "dataset": "normal",
+          "final_full_retained_bytes_per_score": 165952.0,
+          "implementation": "miso",
+          "input_bytes": 104974,
+          "input_sha256": "4b62f8bbd60175f610097817e1759514297f694a46320e1f3d770dbb88c94f97",
+          "library_version": "0.1.0",
+          "python_handle_list_bytes": 568,
+          "python_handle_slot_bytes": 8.0,
+          "python_score_proxy_size_bytes": 344,
+          "retained_scores": 64,
+          "rss_after_python_handle_list_bytes": 23240704,
+          "rss_baseline_after_import_and_input_bytes": 23240704,
+          "rss_slope_bytes_per_score": 166106.5348900353
+        },
+        "symusic": {
+          "checkpoints": [
+            {
+              "full_retained_bytes_per_score": 1544192.0,
+              "retained_scores": 1,
+              "rss_bytes": 32866304,
+              "rss_delta_from_baseline_bytes": 1544192
+            },
+            {
+              "full_retained_bytes_per_score": 970752.0,
+              "retained_scores": 2,
+              "rss_bytes": 33263616,
+              "rss_delta_from_baseline_bytes": 1941504
+            },
+            {
+              "full_retained_bytes_per_score": 684032.0,
+              "retained_scores": 4,
+              "rss_bytes": 34058240,
+              "rss_delta_from_baseline_bytes": 2736128
+            },
+            {
+              "full_retained_bytes_per_score": 540160.0,
+              "retained_scores": 8,
+              "rss_bytes": 35643392,
+              "rss_delta_from_baseline_bytes": 4321280
+            },
+            {
+              "full_retained_bytes_per_score": 468480.0,
+              "retained_scores": 16,
+              "rss_bytes": 38817792,
+              "rss_delta_from_baseline_bytes": 7495680
+            },
+            {
+              "full_retained_bytes_per_score": 431744.0,
+              "retained_scores": 32,
+              "rss_bytes": 45137920,
+              "rss_delta_from_baseline_bytes": 13815808
+            },
+            {
+              "full_retained_bytes_per_score": 413248.0,
+              "retained_scores": 64,
+              "rss_bytes": 57769984,
+              "rss_delta_from_baseline_bytes": 26447872
+            }
+          ],
+          "dataset": "normal",
+          "final_full_retained_bytes_per_score": 413248.0,
+          "implementation": "symusic",
+          "input_bytes": 104974,
+          "input_sha256": "4b62f8bbd60175f610097817e1759514297f694a46320e1f3d770dbb88c94f97",
+          "library_version": "0.6.0",
+          "python_handle_list_bytes": 568,
+          "python_handle_slot_bytes": 8.0,
+          "python_score_proxy_size_bytes": 40,
+          "retained_scores": 64,
+          "rss_after_python_handle_list_bytes": 31322112,
+          "rss_baseline_after_import_and_input_bytes": 31322112,
+          "rss_slope_bytes_per_score": 395288.46701058914
+        }
+      }
+    }
+  },
+  "platform": "linux",
+  "retained_scores_per_checkpoint_final": 64,
+  "rss_source": "/proc/self/statm resident pages * SC_PAGE_SIZE",
+  "schema": "miso-retained-score-memory/v1"
+}

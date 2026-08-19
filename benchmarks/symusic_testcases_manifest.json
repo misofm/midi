@@ -1,0 +1,605 @@
+{
+  "files": [
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "3cd94b0e7f4fa365f5d2bd4ce187b107e5752d339521f3c7a172e05d7c062393",
+        "summary": {
+          "controls": 2982,
+          "key_signatures": 1,
+          "lyrics": 1,
+          "markers": 17,
+          "notes": 6760,
+          "pedals": 0,
+          "pitch_bends": 436,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 14
+        }
+      },
+      "input_bytes": 54692,
+      "input_sha256": "8e541b40daf563d5009c149c0172dc55a9f6264ad6177e7a720059c7d34a5c28",
+      "path": "tests/testcases/Multitrack_MIDIs/Aicha.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/Multitrack_MIDIs/Aicha.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "b3c5bba40066bf4d69244297475a9d66824cd746ad42e0dda1b28a3d35d5f683",
+        "summary": {
+          "controls": 8,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 5879,
+          "pedals": 0,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 10
+        }
+      },
+      "input_bytes": 47734,
+      "input_sha256": "e7f1a7742122c00c1ab1f3015b6951818dc7f084aa50f1743160879482ab92c1",
+      "path": "tests/testcases/Multitrack_MIDIs/All The Small Things.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/Multitrack_MIDIs/All%20The%20Small%20Things.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "a8c81fdfc464f67cc264ec0a35fc8683a22f972d7fbc0e866bd3377775f5a49c",
+        "summary": {
+          "controls": 9,
+          "key_signatures": 1,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 4860,
+          "pedals": 0,
+          "pitch_bends": 52,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 9
+        }
+      },
+      "input_bytes": 39919,
+      "input_sha256": "203bc9b0576480ffe03fe568abdeb1ab2a14ac1ab52443f187d4f93fa72f49d9",
+      "path": "tests/testcases/Multitrack_MIDIs/Funkytown.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/Multitrack_MIDIs/Funkytown.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "d4c07d599984cf159538dca1d0b2063a12baa796bb173bb210581a155ed53c96",
+        "summary": {
+          "controls": 1477,
+          "key_signatures": 1,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 5362,
+          "pedals": 0,
+          "pitch_bends": 59,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 12
+        }
+      },
+      "input_bytes": 38553,
+      "input_sha256": "ac90c0ad4dbe34c8e8c8698aae880d4f10e3e6bf5fa650ffcc47443ba9143b02",
+      "path": "tests/testcases/Multitrack_MIDIs/Girls Just Want to Have Fun.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/Multitrack_MIDIs/Girls%20Just%20Want%20to%20Have%20Fun.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "21e6a86e4037b3e3e7ba0e5961cbc1bd438ac9ca26e10118babaac08f6850766",
+        "summary": {
+          "controls": 152,
+          "key_signatures": 0,
+          "lyrics": 880,
+          "markers": 0,
+          "notes": 4945,
+          "pedals": 0,
+          "pitch_bends": 5,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 7
+        }
+      },
+      "input_bytes": 41866,
+      "input_sha256": "e9aecbd23421144f341f2d9564dd258daa93208bcd0403e7187863f1cb2863e9",
+      "path": "tests/testcases/Multitrack_MIDIs/I Gotta Feeling.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/Multitrack_MIDIs/I%20Gotta%20Feeling.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "b0999536e69853e7be347e104b9b8cc276fbaf7a3fce18594e19083e48c21e6c",
+        "summary": {
+          "controls": 221,
+          "key_signatures": 1,
+          "lyrics": 0,
+          "markers": 12,
+          "notes": 5474,
+          "pedals": 0,
+          "pitch_bends": 14,
+          "tempos": 99,
+          "time_signatures": 1,
+          "tracks": 13
+        }
+      },
+      "input_bytes": 44455,
+      "input_sha256": "10fd666e28dec8f4b11ca1f4139e68edbb80dfc701c729aca99fd875e95bf09f",
+      "path": "tests/testcases/Multitrack_MIDIs/In Too Deep.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/Multitrack_MIDIs/In%20Too%20Deep.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "bdf74035dd7795d9c8d49f943ff12a310c9f49400192680a60736e94af3c1a8d",
+        "summary": {
+          "controls": 3727,
+          "key_signatures": 1,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 2746,
+          "pedals": 0,
+          "pitch_bends": 76,
+          "tempos": 9,
+          "time_signatures": 1,
+          "tracks": 10
+        }
+      },
+      "input_bytes": 37960,
+      "input_sha256": "1f2dfb04db63b79a6d84096fbe920be33df989de31fc749c4b8619eb3c1902c1",
+      "path": "tests/testcases/Multitrack_MIDIs/Les Yeux Revolvers.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/Multitrack_MIDIs/Les%20Yeux%20Revolvers.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "d18c44fa7b9e133aaa912927d9203bb5e03586aaa1d4f8960223b59165479498",
+        "summary": {
+          "controls": 18,
+          "key_signatures": 1,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 4308,
+          "pedals": 0,
+          "pitch_bends": 329,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 9
+        }
+      },
+      "input_bytes": 30160,
+      "input_sha256": "74316188b46ab648a69fe70418c1f01510d4911f2963e159c4cb92641230c7e5",
+      "path": "tests/testcases/Multitrack_MIDIs/Mr. Blue Sky.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/Multitrack_MIDIs/Mr.%20Blue%20Sky.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "8fc4a4c94d5b0270804591ffcff1e6786c2974d2609aa281c0791438d625a40d",
+        "summary": {
+          "controls": 81,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 8317,
+          "pedals": 0,
+          "pitch_bends": 602,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 10
+        }
+      },
+      "input_bytes": 52797,
+      "input_sha256": "9f7fbf95d505ef731c7a2e033d8dd3e6a609fdf53431a0801e9acecb902c2650",
+      "path": "tests/testcases/Multitrack_MIDIs/Shut Up.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/Multitrack_MIDIs/Shut%20Up.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "856aa2fe56d709743e99efc227a6e61c08da379cecd2de6d7c6da3b7e35eb984",
+        "summary": {
+          "controls": 1687,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 7137,
+          "pedals": 0,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 9
+        }
+      },
+      "input_bytes": 69632,
+      "input_sha256": "62c33f44fa91b44e3aa754eed5c0b5986df9184aafeaa2cd88a5a5c1b288568c",
+      "path": "tests/testcases/Multitrack_MIDIs/What a Fool Believes.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/Multitrack_MIDIs/What%20a%20Fool%20Believes.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "d7cb18771c916fb22ad197ec790b823e3cbe6d22c7d9e14de9bf8c425be3cda7",
+        "summary": {
+          "controls": 5,
+          "key_signatures": 2,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 569,
+          "pedals": 0,
+          "pitch_bends": 0,
+          "tempos": 49,
+          "time_signatures": 3,
+          "tracks": 2
+        }
+      },
+      "input_bytes": 3998,
+      "input_sha256": "433e35f1282987e212b9c8c352fa158a5558e47ce787bcf829dd5e6463819c41",
+      "path": "tests/testcases/One_track_MIDIs/6338816_Etude No. 4.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/6338816_Etude%20No.%204.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "b851f7253edfe1aabc1acca04edd5dd97b614baf7b20ed182023536217d45e84",
+        "summary": {
+          "controls": 0,
+          "key_signatures": 1,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 1928,
+          "pedals": 0,
+          "pitch_bends": 0,
+          "tempos": 6,
+          "time_signatures": 6,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 12186,
+      "input_sha256": "ff550e8b2b59af546132412ba74b3bb194ed6000615695cf8d035a3bafe98bc1",
+      "path": "tests/testcases/One_track_MIDIs/6354774_Macabre Waltz.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/6354774_Macabre%20Waltz.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "2ad3aab085b683411bc53ad11d14e527996b76f73a28710eb7cf1ac02f551cf3",
+        "summary": {
+          "controls": 8142,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 2367,
+          "pedals": 242,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 43368,
+      "input_sha256": "de94744a9c06c2c133b6f81e7f08a8707eb8ba614a10c878dd9572fc1eb868c9",
+      "path": "tests/testcases/One_track_MIDIs/Maestro_1.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/Maestro_1.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "8c5dfb9e042c846f761eb4c49b0b93cc8f72c1f9ba5746fe9ddb9f8d6d2d4f9d",
+        "summary": {
+          "controls": 4606,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 5323,
+          "pedals": 279,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 48987,
+      "input_sha256": "20e06e3e391c02fc8ad015b828cdd717d01e9e144da998d7a1c5a5d6dc482757",
+      "path": "tests/testcases/One_track_MIDIs/Maestro_10.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/Maestro_10.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "188e0b24698c6c70784b1e16d9e1efec47d31a79cdf76a291c4d309713f93f17",
+        "summary": {
+          "controls": 7471,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 12418,
+          "pedals": 547,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 103738,
+      "input_sha256": "df1ffec3f938dcca630761bb77bdf0a263e374b7da12a1b3efb3308c4c92d29f",
+      "path": "tests/testcases/One_track_MIDIs/Maestro_2.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/Maestro_2.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "5588272f3513f84650b3045859292cc64ee7ba3baa50b31d7fde80780d3ea56b",
+        "summary": {
+          "controls": 8224,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 3142,
+          "pedals": 241,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 50128,
+      "input_sha256": "cab488a8c7dec96882031342bd80b6c5dad6a930b5495b141622a86be6c552f1",
+      "path": "tests/testcases/One_track_MIDIs/Maestro_3.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/Maestro_3.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "713e1027342c6b6365242516cef784ccb45e1d28abd425f54821c26b2cd0f2e1",
+        "summary": {
+          "controls": 16371,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 5551,
+          "pedals": 628,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 93588,
+      "input_sha256": "2e96c191d000c3796f6a2ed5d3f1baf6f07825d60b40761aee953faaa4efc925",
+      "path": "tests/testcases/One_track_MIDIs/Maestro_4.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/Maestro_4.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "0078ccfeff5af9ba2ca6b26f16dbcf2b9ff641391cc09a30b99403729a71395a",
+        "summary": {
+          "controls": 22731,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 14226,
+          "pedals": 981,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 172419,
+      "input_sha256": "8f3bd5b8a46fce764b56edbd63aba83b68d44f7b7057919e45245ab8bade9c7e",
+      "path": "tests/testcases/One_track_MIDIs/Maestro_5.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/Maestro_5.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "15eabb81cc1ed40379bced522e84aa9f9b13557335ed2245d052eeb2d9b50043",
+        "summary": {
+          "controls": 43067,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 18362,
+          "pedals": 1568,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 265422,
+      "input_sha256": "7d80076155faf6126d5f15d424dc064b44505422b2ad26952299c854d8cfb53d",
+      "path": "tests/testcases/One_track_MIDIs/Maestro_6.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/Maestro_6.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "a7699e5507c541606bf16d0dce7d6ac2af693a0c465ff27dc776ac6c26c33574",
+        "summary": {
+          "controls": 11979,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 20450,
+          "pedals": 1584,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 171516,
+      "input_sha256": "e1665de32682a9207ec668963962373fe7d7cb730a55d03a1d2f2d559745f904",
+      "path": "tests/testcases/One_track_MIDIs/Maestro_7.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/Maestro_7.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "221fe7883725ae2714b71818a4aa3c15ab17d468d6c0f7b4536f643076b207dc",
+        "summary": {
+          "controls": 19697,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 11586,
+          "pedals": 1010,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 142240,
+      "input_sha256": "050d43da091000ead9b652d2d1cee06813b4d0a0cdd69b0b13ebf5fe67c7d39d",
+      "path": "tests/testcases/One_track_MIDIs/Maestro_8.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/Maestro_8.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "7aee4e1615b6a98d0ae59b8bd8f63b553951ffeb0042b6cdcd9ac109a3e83174",
+        "summary": {
+          "controls": 15999,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 8476,
+          "pedals": 858,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 109226,
+      "input_sha256": "306f3e8ca0aeb1d7aa417e7afe10dfcc3583a9e1821c784fa14ce1a41ec5cb26",
+      "path": "tests/testcases/One_track_MIDIs/Maestro_9.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/Maestro_9.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "19f03a976c2450ba1a4af89948f40f954d98c1443f40dc10ff79e89221d70bab",
+        "summary": {
+          "controls": 0,
+          "key_signatures": 1,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 1661,
+          "pedals": 0,
+          "pitch_bends": 0,
+          "tempos": 16,
+          "time_signatures": 2,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 10391,
+      "input_sha256": "9c24f78580b5ffae284d0537a0f5188e265dc74dfe8219a4181819a1887830f0",
+      "path": "tests/testcases/One_track_MIDIs/POP909_008.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/POP909_008.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "6500327c9f54e14a105400af760b3f144ed06a8aa7fd9f172cc6cc0040e9e68e",
+        "summary": {
+          "controls": 0,
+          "key_signatures": 0,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 1671,
+          "pedals": 0,
+          "pitch_bends": 0,
+          "tempos": 23,
+          "time_signatures": 3,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 10678,
+      "input_sha256": "711c7230a53a806e7f78ceb360b440646b310d47a008ae82c4c9b2631276509b",
+      "path": "tests/testcases/One_track_MIDIs/POP909_010.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/POP909_010.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "6ea122136cdac79b0f340d9eeb2e3b78e776500aae92aab11a74b7e59edea677",
+        "summary": {
+          "controls": 0,
+          "key_signatures": 1,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 1535,
+          "pedals": 0,
+          "pitch_bends": 0,
+          "tempos": 9,
+          "time_signatures": 2,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 9653,
+      "input_sha256": "dc2634c77720aa7eedeec8271a0d594f0bf6fee6f8d5f1ec666a22558f8d2a07",
+      "path": "tests/testcases/One_track_MIDIs/POP909_022.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/POP909_022.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "a4b2749212b674ab2bf35b7681c9ceef24c3708e49dbf1f330217e22e82c8338",
+        "summary": {
+          "controls": 52,
+          "key_signatures": 1,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 1923,
+          "pedals": 26,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 4,
+          "tracks": 1
+        }
+      },
+      "input_bytes": 12105,
+      "input_sha256": "72a68771d2ab54fce09e9acdee3e78be48ed338a7d579c4c74cc3400285d6bac",
+      "path": "tests/testcases/One_track_MIDIs/POP909_191.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/POP909_191.mid"
+    },
+    {
+      "contract": {
+        "schema": "miso-score-contract/v1",
+        "sha256": "8fd17ac0b13ff6c38d28cbeed566a7343dbad1b50e1940502628f6d202c065b7",
+        "summary": {
+          "controls": 0,
+          "key_signatures": 1,
+          "lyrics": 0,
+          "markers": 0,
+          "notes": 0,
+          "pedals": 0,
+          "pitch_bends": 0,
+          "tempos": 1,
+          "time_signatures": 1,
+          "tracks": 0
+        }
+      },
+      "input_bytes": 76,
+      "input_sha256": "e73dee48036f656684dacf93cb17e24c08168ae80ae5aefe1f4fe9e9422cfd60",
+      "path": "tests/testcases/One_track_MIDIs/empty.mid",
+      "raw_url": "https://raw.githubusercontent.com/Yikai-Liao/symusic/43ff25277abbc72dbd8d00fb5a9a14ec37fb7906/tests/testcases/One_track_MIDIs/empty.mid"
+    }
+  ],
+  "license_notice": "Source files are fetched from Symusic v0.6.0 testcases. Symusic is MIT-licensed; this manifest does not assert copyright or redistribution rights for the musical compositions or MIDI arrangements, so MIDI bytes are not vendored.",
+  "schema": "miso-symusic-testcases-corpus/v1",
+  "source": {
+    "commit": "43ff25277abbc72dbd8d00fb5a9a14ec37fb7906",
+    "repository": "Yikai-Liao/symusic",
+    "tag": "v0.6.0"
+  }
+}

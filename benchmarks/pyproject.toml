@@ -1,0 +1,24 @@
+[project]
+name = "miso-midi-benchmarks"
+version = "0.0.0"
+description = "Isolated competitor benchmarks for miso-midi"
+requires-python = ">=3.10"
+dependencies = ["miso-midi"]
+
+[tool.uv.sources]
+miso-midi = { path = "..", editable = true }
+
+[dependency-groups]
+dev = [
+    "cmake>=4.4.2",
+    "maturin>=1.14.1",
+    "mido==1.3.3",
+    "ninja>=1.13.0",
+    "pyperf>=2.9,<3",
+    "pytest>=8,<9",
+    "symusic==0.6.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".."]

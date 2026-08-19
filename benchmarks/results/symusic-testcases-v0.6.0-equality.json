@@ -1,0 +1,25 @@
+{
+  "files_verified": 27,
+  "input_bytes_verified": 1717487,
+  "manifest_sha256": "13e633c50b206464fbdc4d7488fa1637da04ac0d8eac97a484ddb48918f21622",
+  "result": "full_miso_symusic_contract_equality",
+  "schema": "miso-symusic-testcases-evidence/v1",
+  "score_contract_schema": "miso-score-contract/v1",
+  "source": {
+    "commit": "43ff25277abbc72dbd8d00fb5a9a14ec37fb7906",
+    "repository": "Yikai-Liao/symusic",
+    "tag": "v0.6.0"
+  },
+  "summary_totals": {
+    "controls": 168706,
+    "key_signatures": 13,
+    "lyrics": 881,
+    "markers": 29,
+    "notes": 166976,
+    "pedals": 7964,
+    "pitch_bends": 1573,
+    "tempos": 231,
+    "time_signatures": 41,
+    "tracks": 120
+  }
+}
